@@ -15,21 +15,21 @@ func main() {
 	req, err := http.NewRequest(method, url, nil)
 
 	if err != nil {
-		fmt.Println(err)
+		t.Error(err)
 		return
 	}
 	req.Header.Add("Authorization", "Basic YWRtaW46QWRtaW4=")
 
 	res, err := client.Do(req)
 	if err != nil {
-		fmt.Println(err)
+		t.Error(err)
 		return
 	}
 	defer res.Body.Close()
 
 	body, err := io.ReadAll(res.Body)
 	if err != nil {
-		fmt.Println(err)
+		t.Error(err)
 		return
 	}
 	fmt.Println(string(body))

@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"livetv/entity"
-	"livetv/service"
-	"livetv/validation"
+	"golang-api-default-2/entity"
+	"golang-api-default-2/service"
+	"golang-api-default-2/validation"
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"

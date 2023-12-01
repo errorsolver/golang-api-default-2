@@ -1,10 +1,10 @@
 package main
 
 import (
+	"golang-api-default-2/controller"
+	"golang-api-default-2/middlewares"
+	"golang-api-default-2/service"
 	"io"
-	"livetv/controller"
-	"livetv/middlewares"
-	"livetv/service"
 	"net/http"
 	"os"
 

@@ -1,6 +1,6 @@
 package service
 
-import "livetv/entity"
+import "golang-api-default-2/entity"
 
 type VideoService interface {
 	Save(entity.Video) entity.Video
